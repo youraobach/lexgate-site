@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — LexGate</title>
+<meta name="description" content="LexGate privacy policy. All data stays on your device: no accounts, no analytics, no tracking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --indigo:  #140E2E;
+    --purple:  #6B3FA0;
+    --cyan:    #7FE9FF;
+    --ink:     rgba(255,255,255,0.92);
+    --ink-dim: rgba(255,255,255,0.6);
+    --ink-faint: rgba(255,255,255,0.35);
+    --glass-border: rgba(255,255,255,0.14);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    background: var(--indigo);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+  .aurora {
+    position: fixed; inset: 0; z-index: -1;
+    background: var(--indigo); overflow: hidden;
+  }
+  .orb {
+    position: absolute; border-radius: 50%; filter: blur(90px);
+  }
+  .orb-purple { width: 420px; height: 420px; background: var(--purple); opacity: 0.5; top: -160px; right: -120px; }
+  .orb-cyan   { width: 300px; height: 300px; background: var(--cyan); opacity: 0.12; bottom: -80px; left: -120px; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 80px; }
+
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 28px 0 56px;
+  }
+  .logo {
+    font-size: 14px; font-weight: 700; letter-spacing: 5px;
+    color: var(--ink); text-decoration: none;
+  }
+  .logo span { color: var(--cyan); }
+  header a.back { color: var(--ink-dim); text-decoration: none; font-size: 14px; }
+  header a.back:hover { color: var(--cyan); }
+  a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 4px; }
+
+  .eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 4px;
+    text-transform: uppercase; color: var(--ink-faint);
+  }
+  h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-top: 10px; letter-spacing: -0.4px; }
+  .updated { color: var(--ink-faint); font-size: 14px; margin-top: 10px; }
+
+  h2 {
+    font-size: 20px; font-weight: 600; color: var(--cyan);
+    margin-top: 44px; padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  p { margin-top: 14px; color: var(--ink-dim); }
+  strong { color: var(--ink); font-weight: 600; }
+  a { color: var(--cyan); }
+
+  footer {
+    max-width: 720px; margin: 0 auto; padding: 32px 24px 48px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: var(--ink-faint); font-size: 13px;
+    display: flex; justify-content: space-between;
+  }
+  footer a { color: var(--ink-dim); text-decoration: none; }
+  footer a:hover { color: var(--cyan); }
+</style>
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <div class="orb orb-purple"></div>
+  <div class="orb orb-cyan"></div>
+</div>
+
+<div class="wrap">
+
+  <header>
+    <a class="logo" href="index.html">LEX<span>GATE</span></a>
+    <a class="back" href="index.html">← Back to home</a>
+  </header>
+
+  <span class="eyebrow">Legal</span>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: July 7, 2026</p>
+
+  <p>
+    LexGate is built around a simple principle: <strong>your data is yours,
+    and it never leaves your device.</strong> This policy explains what the
+    app does — and, mostly, what it doesn't do.
+  </p>
+
+  <h2>What LexGate does on your device</h2>
+  <p>
+    LexGate helps you limit access to apps you choose and learn English
+    vocabulary in the process. To do this, the app stores the following
+    information <strong>locally on your iPhone only</strong>: the list of apps
+    you selected for blocking (as anonymous tokens provided by Apple's
+    Screen Time technology), your learning progress (words shown, answers,
+    review schedule), your chosen language level, and the name you enter
+    during onboarding.
+  </p>
+
+  <h2>What we collect</h2>
+  <p>
+    <strong>Nothing.</strong> LexGate has no user accounts, no sign-in, no
+    backend servers, no analytics SDKs, no advertising frameworks, and no
+    crash-reporting tools that transmit data. The app is fully functional
+    offline. We — the developers — have no way of knowing which apps you
+    block, which words you learn, or whether you use LexGate at all.
+  </p>
+
+  <h2>Screen Time technology</h2>
+  <p>
+    App blocking is powered by Apple's Screen Time frameworks
+    (Family Controls, Managed Settings, and Device Activity). LexGate
+    requests Screen Time authorization for <strong>your own device and your
+    own use</strong> — it is a self-management tool, not a parental-control
+    service. Apple's frameworks are designed so that apps like LexGate
+    receive only opaque tokens, not the actual identities of the apps you
+    select. You can revoke this authorization at any time in
+    Settings&nbsp;→&nbsp;Screen&nbsp;Time.
+  </p>
+
+  <h2>Notifications</h2>
+  <p>
+    LexGate asks for notification permission for one purpose: when you tap
+    a blocked app, a notification is the bridge that opens the exercise.
+    Notifications are generated locally on your device; there is no remote
+    push infrastructure.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    LexGate is intended for adults managing their own screen time and is
+    not directed at children.
+  </p>
+
+  <h2>Data deletion</h2>
+  <p>
+    Because everything is stored locally, deleting the app deletes all of
+    its data. There is nothing to request from us, because we hold nothing.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If a future version of LexGate ever changes how data is handled — for
+    example, by adding optional iCloud sync — this policy will be updated
+    before that version is released, and the change will be clearly
+    described in the app.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about privacy? Write to
+    <a href="mailto:lexgate0707@gmail.com">lexgate0707@gmail.com</a>.
+  </p>
+
+</div>
+
+<footer>
+  <div>© 2026 LexGate</div>
+  <div><a href="index.html">lexgate home</a></div>
+</footer>
+
+</body>
+</html>
